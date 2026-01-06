@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "inşaat oyunu.slnx"
+    "dotnet.defaultSolution": "in-aat-oyunu.slnx"
 }
