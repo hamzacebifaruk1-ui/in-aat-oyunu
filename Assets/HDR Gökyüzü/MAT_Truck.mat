@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: MAT_Truck
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: 55598f552b6f19042b9210f49c0efad9, type: 2}
+  m_Parent: {fileID: 2100000, guid: 18abc12685318fb42a884d37ef082ba1, type: 2}
   m_ModifiedSerializedProperties: 2
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -26,7 +26,9 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _Metallic: 0.1
+    - _Smoothness: 0.55
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
