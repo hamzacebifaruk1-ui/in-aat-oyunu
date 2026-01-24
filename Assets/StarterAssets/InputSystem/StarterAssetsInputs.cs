@@ -28,7 +28,7 @@ namespace StarterAssets
 
 		public void OnLook(InputValue value)
 		{
-			if(cursorInputForLook)
+			if (cursorInputForLook)
 			{
 				LookInput(value.Get<Vector2>());
 			}
@@ -45,11 +45,19 @@ namespace StarterAssets
 		}
 #endif
 
-
+		// 🔴 BURASI DÜZELTİLDİ
 		public void MoveInput(Vector2 newMoveDirection)
 		{
-			move = newMoveDirection;
-		} 
+			// Çok küçük inputları tamamen sıfırla
+			if (newMoveDirection.magnitude < 0.1f)
+			{
+				move = Vector2.zero;
+			}
+			else
+			{
+				move = newMoveDirection;
+			}
+		}
 
 		public void LookInput(Vector2 newLookDirection)
 		{
@@ -76,5 +84,4 @@ namespace StarterAssets
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
 	}
-	
 }
